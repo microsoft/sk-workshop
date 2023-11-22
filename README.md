@@ -1,9 +1,7 @@
 # Sematic Kernel Workshop
 
-Learn how to build solutions with Large Language Models 
-in a day. This includes learning Azure Machine Learning
-Prompt Flow, Content Safety, Azure OpenAI, LLMs 
-solutions Evaluation and Monitoring.
+Learn how to build solutions with Semantic Kernel 
+in a day.
 
 ## Contents
 
@@ -27,7 +25,7 @@ solutions Evaluation and Monitoring.
 1. Install the software listed in the previous section.
 2. Clone this repository to your local workstation.
 ```
-    git clone git@github.com:placerda/llmops-workshop.git
+    git clone git@github.com:placerda/sk-workshop.git  
 ```
 3. Open terminal to create and activate conda environment
 ```
@@ -35,7 +33,7 @@ conda create -n workshop python=3.10
 ```
 4. Open the directory where the repository was cloned in terminal.
 ```
-    cd llmops-workshop
+    cd sk-workshop
 ```
 5. Install the required python libraries.
 ```

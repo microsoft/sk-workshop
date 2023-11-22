@@ -1,5 +1,2 @@
 ipykernel
-nbstripout
-nbconvert
-promptflow
-promptflow-tools
+semantic-kernel
