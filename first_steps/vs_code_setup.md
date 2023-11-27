@@ -1,3 +1,8 @@
+### General Setup
+
+Semantic Kernel extension in VS Code requires .NET 6.0.0.
+1. Download and Install [.NET 6.0.0 Runtime x64](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=6.0.0&arch=x64&rid=win10-x64)
+
 ### VS Code Setup
 
 In VS Code:
@@ -6,7 +11,8 @@ In VS Code:
 
 2. Install [Azure Tools Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
 
-3. Install [Prompt flow for VS Code](https://marketplace.visualstudio.com/items?itemName=prompt-flow.prompt-flow)
+3. Install [Semantic Kernel Extension](https://marketplace.visualstudio.com/items?itemName=ms-semantic-kernel.semantic-kernel)
+
 
 4. In VS Code UI select the conda environment you created in the first steps.
 ```
