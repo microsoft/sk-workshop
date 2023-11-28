@@ -11,8 +11,7 @@ In VS Code:
 
 2. Install [Azure Tools Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
 
-3. Install [Semantic Kernel Extension](https://marketplace.visualstudio.com/items?itemName=ms-semantic-kernel.semantic-kernel)
-
+3. Install [Semantic Kernel Tools](https://marketplace.visualstudio.com/items?itemName=ms-semantic-kernel.semantic-kernel)
 
 4. In VS Code UI select the conda environment you created in the first steps.
 ```
