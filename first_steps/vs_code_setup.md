@@ -1,3 +1,8 @@
+### General Setup
+
+Semantic Kernel extension in VS Code requires .NET 6.0.0.
+1. Download and Install [.NET 6.0.0 Runtime x64](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=6.0.0&arch=x64&rid=win10-x64)
+
 ### VS Code Setup
 
 In VS Code:
