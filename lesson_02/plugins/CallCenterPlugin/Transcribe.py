@@ -1,17 +1,25 @@
-import azure.cognitiveservices.speech as speechsdk
+
 import time
+
+#Importing Azure Cognitive Services Speech SDK package
+import azure.cognitiveservices.speech as speechsdk
+
+#Importing Semantic Kernel packages to define the function and its parameters
 from semantic_kernel.skill_definition import (
     sk_function,
     sk_function_context_parameter,
 )
+#Importing Semantic Kernel package to parse input variables
+from semantic_kernel.orchestration.sk_context import SKContext
 
-class Transcribe:    
+#Defining the Transcribe class to be used as a plugin to transcribe audio files
+class Transcribe:
     @sk_function(
-            description="Transcribe an audio file",
-            name="transcribe_audio",
-            )
+        description="Transcribe an audio file. Suitable for long audio files",
+        name="transcribe_audio",
+    )
     @sk_function_context_parameter(
-        name="audio",
+        name="audio_path",
         description="The path to the audio file to transcribe",
     )
     @sk_function_context_parameter(
@@ -25,20 +33,26 @@ class Transcribe:
     @sk_function_context_parameter(
         name="region",
         description="The region of the Azure AI Speech resource",
-    )  
-    def transcribe_audio(audio, language, subscription_key, region):
-        # Set up the speech configuration
+    )         
+    def transcribe_audio(self, context: SKContext) -> str:
+        #Obtaining and parsing input parameters from SKContext
+        audio_path = context["audio_path"]
+        language = context["language"]
+        subscription_key = context["subscription_key"]
+        region = context["region"]
+
+        #Set up the speech configuration
         speech_config = speechsdk.SpeechConfig(subscription=subscription_key, region=region)
         # Define the language of the audio file
         speech_config.speech_recognition_language = language
 
         # Open the audio file
-        audio_config = speechsdk.audio.AudioConfig(filename=audio)
+        audio_config = speechsdk.audio.AudioConfig(filename=audio_path)
 
         # Create a speech recognizer
         speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config)
 
-        # Define global variables
+        # Define global variables to control the continuous recognition loop and accumulate text
         global done 
         done = False
         global recognized_text_list 
@@ -65,11 +79,53 @@ class Transcribe:
     
         # Start continuous speech recognition
         speech_recognizer.start_continuous_recognition()
+        print("Continuous speech recognition started. Waiting to complete transcription...")
         while not done:
-            time.sleep(.5)
+            time.sleep(.1)
 
-        # Stop continuous speech recognition
+        #Stop continuous speech recognition
         speech_recognizer.stop_continuous_recognition()
         
-        # Convert to string and return the transcription
-        return recognized_text_list
+        print("Transcription complete.")
+                
+        return str(recognized_text_list)
+
+    @sk_function(
+        description="Transcribe a short audio file, which has a single utterance or less than 15 seconds",
+        name="transcribe_short_audio",
+    )
+    @sk_function_context_parameter(
+        name="audio_path",
+        description="The path to the short audio file to transcribe",
+    )
+    @sk_function_context_parameter(
+        name="language",
+        description="The language of the audio file in the format of Locale (BCP-47) (e.g. en-US)",
+    )
+    @sk_function_context_parameter(
+        name="subscription_key",
+        description="The subscription key for the Azure AI Speech resource",
+    )
+    @sk_function_context_parameter(
+        name="region",
+        description="The region of the Azure AI Speech resource",
+    )         
+    def transcribe_short_audio(self, context: SKContext):
+        #Set up the speech configuration
+        speech_config = speechsdk.SpeechConfig(subscription=context["subscription_key"], region=context["region"])
+        # Define the language of the audio file
+        speech_config.speech_recognition_language = context["language"]
+
+        # Open the audio file
+        audio_config = speechsdk.audio.AudioConfig(filename=context["audio_path"])
+
+        # Create a speech recognizer
+        speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config)
+
+        # Perform short audio transcription
+        result = speech_recognizer.recognize_once()
+    
+        if result.reason == speechsdk.ResultReason.RecognizedSpeech:
+            return result.text
+        else:
+            return None  
