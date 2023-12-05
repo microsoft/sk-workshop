@@ -1,4 +1,4 @@
-## First Steps
+## Workshop Setup
 
 1. Install the software mentioned in the pre-requisites session:
 
@@ -41,20 +41,25 @@ nbstripout --install
 
 9. VS Code Setup:
 
-9.1. Install [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+    9.1. Install [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
-9.2. Install [Azure Tools Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+    9.2. Install [Azure Tools Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
 
-9.3. Install [Semantic Kernel Tools](https://marketplace.visualstudio.com/items?itemName=ms-semantic-kernel.semantic-kernel)
+    9.3. Install [Semantic Kernel Tools](https://marketplace.visualstudio.com/items?itemName=ms-semantic-kernel.semantic-kernel)
 
-9.4. In VS Code UI select the conda environment you created in the first steps.
-```
-Open the command palette by pressing Ctrl+Shift+P (or Cmd+Shift+P on macOS).
-Type and select Python: Select Interpreter.
-A list of discovered environments will be shown in the drop-down list. 
-Select the Python environment named workshop.
-```
+    9.4. In VS Code UI select the conda environment you created in step 3:
+        
+        9.4.1. Open the command palette by pressing Ctrl+Shift+P (or Cmd+Shift+P on macOS).
+
+        9.4.2. Type and select Python: Select Interpreter.
+
+        9.4.3. A list of discovered environments will be shown in the drop-down list.
+
+        9.4.4. Select the Python environment named workshop.
+
 ![select interpreter](images/select_interpreter.png)
+
+Done! Workshop setup is finished.
 
 <!-- 
 ![select interpreter](images/select_interpreter.png)
