@@ -1,28 +1,29 @@
 #### Table of Contents
 
-##### 1: Introduction to LLMs and Azure AI 
-- Introduction to LLMs: GPTs and other models.
-- LLMOps: applying MLOps principles to LLM Solutions.
-- Azure OpenAI Service Overview.
-- Azure Machine Learning Service Overview.
-- Azure AI
+##### 1: Background - Introduction to LLMs  
+ - Introduction to LLMs: GPTs and other models.
+ - Azure AI Services Overview.
+ - Azure OpenAI Service Overview.
 
-##### 2: Building LLMs Orchestration Flows
- - AzureML prompt flow.
- - Building LLMs Orchestration Flows. 
+##### 2: CoPilot Stack and Semantic Kernel
+ - Introduction to Copilots.
+ - Microsoft Copilots.
+ - Copilot ecosystem (Copilots + Plugins).
+ - Build your own Copilots.  
+ - What is Semantic Kernel?
+ - Why Semantic Kernel?
+ - The role of the kernel.
 
-##### 3: Evaluating and Deploying LLMs
- - Evaluating LLMs Solutions.
- - Deploying LLMs Flows.
+##### 3: Semantic Kernel Basic Concepts  
+ - Native and Semantic Functions.
+ - Create AI Plugins from functions.
+ - Chain plugins together.
 
-##### 4: Monitoring and Responsible AI 
- - Monitoring LLMs orchestration flows.
- - Content safety to protect your solution.
+##### 4: Semantic Kernel Advanced Topics
+ - Add Memory to your AI Apps.
+ - Use Planners to automate Plugins orchestration.
+ - Calling external connectors.
 
-##### 5: Automating Everything
- - Github and Github Actions.
- - Evaluation and Deployment Automation.
-
-##### 6: Best Practices and Lessons Learned
- - Learn some best practices on service limits, setting up workspaces, and Security.
+##### 5: Best Practices and Lessons Learned
+ - Learn some best practices on service limits.
  - Final discussions and wrap-up.
