@@ -8,8 +8,8 @@
 ##### 2 CoPilot Stack and Semantic Kernel
  - Introduction to Copilots.
  - Microsoft Copilots.
- - Copilot ecosystem (Copilots + Plugins).
  - Build your own Copilots.  
+ - Copilot ecosystem (Copilots + Plugins).
  - What is Semantic Kernel?
  - Why Semantic Kernel?
  - The role of the kernel.
