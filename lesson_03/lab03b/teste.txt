@@ -1,0 +1,78 @@
+{
+    "subscribers": {
+        "columns": [
+            {
+                "name": "subscriber_id",
+                "type": "INTEGER"
+            },
+            {
+                "name": "name",
+                "type": "VARCHAR"
+            }
+        ],
+        "primary_key": [
+            "subscriber_id"
+        ],
+        "foreign_keys": []
+    },
+    "plans": {
+        "columns": [
+            {
+                "name": "plan_id",
+                "type": "INTEGER"
+            },
+            {
+                "name": "name",
+                "type": "VARCHAR"
+            },
+            {
+                "name": "data_allowance",
+                "type": "INTEGER"
+            },
+
+        ],
+        "primary_key": [
+            "plan_id"
+        ],
+        "foreign_keys": []
+    },
+    "subscribers_plans": {
+        "columns": [
+            {
+                "name": "subscription_id",
+                "type": "INTEGER"
+            },
+            {
+                "name": "plan_id",
+                "type": "INTEGER"
+            },
+            {
+                "name": "subscriber_id",
+                "type": "INTEGER"
+            }
+        ],
+        "primary_key": [
+            "subscription_id"
+        ],
+        "foreign_keys": [
+            {
+                "columns": [
+                    "plan_id"
+                ],
+                "referred_table": "plans",
+                "referred_columns": [
+                    "plan_id"
+                ]
+            },
+            {
+                "columns": [
+                    "subscriber_id"
+                ],
+                "referred_table": "subscribers",
+                "referred_columns": [
+                    "subscriber_id"
+                ]
+            }
+        ]
+    }
+}

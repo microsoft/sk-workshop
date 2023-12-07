@@ -13,7 +13,8 @@
 
 3. Open terminal to create and activate conda environment
 ```
-conda create -n workshop python=3.10
+conda create -n sk-workshop python=3.10
+conda activate sk-workshop
 ```
 
 4. Open the directory where the repository was cloned in terminal.
