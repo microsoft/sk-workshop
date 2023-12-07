@@ -1,0 +1,26 @@
+{
+    "schema": 1,
+    "type": "completion",
+    "description": "Classify a problem report in a call to the Telecom company based on provided categories.",
+    "completion": {
+         "max_tokens": 10,
+         "temperature": 0.5,
+         "top_p": 0.0,
+         "presence_penalty": 0.0,
+         "frequency_penalty": 0.0
+    },
+    "input": {
+         "parameters": [
+              {
+                   "name": "input",
+                   "description": "The problem reported by the user that needs to be classified. Required parameter.",
+                   "defaultValue": ""
+              },
+              {
+                   "name": "categories",
+                   "description": "A set of categories used by the Telecom company to classify the problems. Required parameter.",
+                   "defaultValue": ""
+              }
+         ]
+    }
+}
