@@ -6,7 +6,7 @@ import azure.cognitiveservices.speech as speechsdk
 #Importing Semantic Kernel packages to define the function and its parameters
 from semantic_kernel.skill_definition import (
     sk_function,
-    sk_function_context_parameter,
+    sk_function_context_parameter
 )
 #Importing Semantic Kernel package to parse input variables
 from semantic_kernel.orchestration.sk_context import SKContext
@@ -14,7 +14,7 @@ from semantic_kernel.orchestration.sk_context import SKContext
 #Defining the Transcribe class to be used as a plugin to transcribe audio files
 class Transcribe:
     @sk_function(
-        description="Transcribe an audio file. Output the text transcription of the audio",
+        description="Transcribe an audio file and output its text transcription.",
         name="transcribe_audio",
     )
     @sk_function_context_parameter(

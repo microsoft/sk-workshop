@@ -3,7 +3,7 @@
     "type": "completion",
     "description": "Summarize a problem recorded from a call center of a Telecom company",
     "completion": {
-        "max_tokens": 250,
+        "max_tokens": 1500,
         "temperature": 0.6,
         "top_p": 0,
         "presence_penalty": 0,
