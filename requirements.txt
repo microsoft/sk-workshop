@@ -6,3 +6,4 @@ nbstripout==0.6.1
 sqlalchemy==2.0.23
 azure-core==1.29.5
 azure-search-documents==11.4.0b8
+azure-cognitiveservices-speech==1.30.0
