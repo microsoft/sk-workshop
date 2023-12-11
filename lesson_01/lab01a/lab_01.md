@@ -37,7 +37,7 @@ nbstripout --install
     code .
 ```
 
-8. Download and Install [.NET 6.0.0 Runtime x64](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=6.0.0&arch=x64&rid=win10-x64) (Semantic Kernel extension in VS Code requires .NET 6.0.0)
+8. Download and Install VSCode Runtume[.NET Runtime](https://dotnet.microsoft.com/en-us/download)
 
 
 9. VS Code Setup:
