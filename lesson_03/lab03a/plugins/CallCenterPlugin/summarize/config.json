@@ -1,7 +1,7 @@
 {
     "schema": 1,
     "type": "completion",
-    "description": "Summarize a problem recorded from a call center of a Telecom company",
+    "description": "Summarize a problem recorded from a call center of a telco company",
     "completion": {
         "max_tokens": 1500,
         "temperature": 0.6,

@@ -1,7 +1,7 @@
 {
     "schema": 1,
     "type": "completion",
-    "description": "Classify a problem report in a call to the Telecom company based on provided categories.",
+    "description": "Classify a problem report in a call to the telco company based on provided categories.",
     "completion": {
          "max_tokens": 10,
          "temperature": 0.5,
@@ -18,7 +18,7 @@
               },
               {
                    "name": "categories",
-                   "description": "A set of categories used by the Telecom company to classify the problems. Required parameter.",
+                   "description": "A set of categories used by the telco company to classify the problems. Required parameter.",
                    "defaultValue": ""
               }
          ]
