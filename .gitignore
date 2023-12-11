@@ -2,6 +2,8 @@
 local/ 
 lesson_03/lab03b/data.db
 lesson_03/lab03b/plugins
+lesson_04/plugins
+lesson_04/src
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
