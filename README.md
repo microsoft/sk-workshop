@@ -1,6 +1,6 @@
 # Sematic Kernel Workshop
 
-Learn how to build LLM Apps with Semantic Kernel in a day.
+Learn how to build LLM Apps with Semantic Kernel.
 
 ## Contents
 
