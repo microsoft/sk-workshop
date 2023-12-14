@@ -18,7 +18,6 @@ After completing this workshop, students will be able to:
 
 * Embed Generative AI in their applications.
 
-
 ## Contents
 
 ##### 1 Background - Introduction to LLMs  
@@ -60,4 +59,3 @@ After completing this workshop, students will be able to:
 - Cloud
 
     - [Azure Subscription](https://azure.com)
-    <!-- - [Github.com Account](https://github.com) -->

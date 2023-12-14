@@ -2,7 +2,6 @@
 
 1. Install the software mentioned in the pre-requisites session:
 
-    <!-- - [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) -->
     - [Anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
     - [VS Code](https://code.visualstudio.com/)
 
