@@ -1,9 +1,10 @@
 # sk-workshop
 local/ 
-lesson_03/lab03b/data.db
-lesson_03/lab03b/plugins
-lesson_04/plugins
-lesson_04/src
+labs/lesson_03/lab03b/data.db
+labs/lesson_03/lab03b/plugins
+labs/lesson_04/plugins
+labs/lesson_04/src
+*.docx
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
