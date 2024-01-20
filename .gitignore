@@ -5,6 +5,7 @@ labs/lesson_03/lab03b/plugins
 labs/lesson_04/plugins
 labs/lesson_04/src
 *.docx
+.env 
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
