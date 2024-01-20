@@ -1,6 +1,3 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT license.
-
 import time
 
 #Importing Azure Cognitive Services Speech SDK package
@@ -9,7 +6,7 @@ import azure.cognitiveservices.speech as speechsdk
 #Importing Semantic Kernel packages to define the function and its parameters
 from semantic_kernel.skill_definition import (
     sk_function,
-    sk_function_context_parameter
+    sk_function_context_parameter,
 )
 #Importing Semantic Kernel package to parse input variables
 from semantic_kernel.orchestration.sk_context import SKContext
